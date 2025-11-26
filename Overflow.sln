@@ -8,6 +8,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{BE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestionService", "QuestionService\QuestionService.csproj", "{8C9E3B3A-319B-4237-8EC9-B8237C8C2E08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchService", "SearchService\SearchService.csproj", "{7CB0CB84-86BF-4F33-A3C4-3B723329D30C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{7B5939E2-0B9E-4475-866B-63CF2C1B8CEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{65A78D15-E322-4650-80A2-49449C001C7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,8 +32,18 @@ Global
 		{8C9E3B3A-319B-4237-8EC9-B8237C8C2E08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C9E3B3A-319B-4237-8EC9-B8237C8C2E08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C9E3B3A-319B-4237-8EC9-B8237C8C2E08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CB0CB84-86BF-4F33-A3C4-3B723329D30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB0CB84-86BF-4F33-A3C4-3B723329D30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB0CB84-86BF-4F33-A3C4-3B723329D30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB0CB84-86BF-4F33-A3C4-3B723329D30C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A78D15-E322-4650-80A2-49449C001C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A78D15-E322-4650-80A2-49449C001C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A78D15-E322-4650-80A2-49449C001C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A78D15-E322-4650-80A2-49449C001C7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8C9E3B3A-319B-4237-8EC9-B8237C8C2E08} = {BEDC7BCB-7618-4522-B8D9-592B93130AF1}
+		{7CB0CB84-86BF-4F33-A3C4-3B723329D30C} = {BEDC7BCB-7618-4522-B8D9-592B93130AF1}
+		{65A78D15-E322-4650-80A2-49449C001C7B} = {7B5939E2-0B9E-4475-866B-63CF2C1B8CEA}
 	EndGlobalSection
 EndGlobal
