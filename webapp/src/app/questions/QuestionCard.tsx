@@ -6,6 +6,7 @@ import {Chip} from "@heroui/chip";
 import {Avatar} from "@heroui/avatar";
 import clsx from "clsx";
 import {CheckIcon} from "@heroicons/react/24/outline";
+import {timeAgo} from "@/lib/util";
 
 type Props = {
     question: Question;
@@ -59,7 +60,7 @@ export default function QuestionCard({question}: Props) {
                             <Link href={`/profiles/${question.askerId}`} className='text-secondary'>
                                 {question.askerDisplayName}
                             </Link>
-                            <span>asked {question.createdAt}</span>
+                            <span>asked {timeAgo(question.createdAt)}</span>
                         </div>
                     </div>
                 </div>
