@@ -1,8 +1,10 @@
 import {Answer} from "@/lib/types";
 import VotingButtons from "@/app/questions/[id]/VotingButtons";
 import AnswerFooter from "@/app/questions/[id]/AnswerFooter";
+import {getCurrentUser} from "@/lib/actions/auth-actions";
 
-export default function AnswerContent({answer}: {answer: Answer}) {
+export default async function AnswerContent({answer}: {answer: Answer}) {
+    const currentUser = await getCurrentUser();
     return (
         <div className='flex border-b pb-3 px-6'>
             <VotingButtons accepted={answer.accepted} />
@@ -11,7 +13,7 @@ export default function AnswerContent({answer}: {answer: Answer}) {
                     className='flex-1 mt-4 ml-6 prose max-w-none dark:prose-invert'
                     dangerouslySetInnerHTML={{__html: answer.content}}
                 />
-                <AnswerFooter answer={answer} />
+                <AnswerFooter answer={answer} currentUser={currentUser} />
             </div>
         </div>
     );

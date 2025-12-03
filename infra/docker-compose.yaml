@@ -21,8 +21,6 @@ services:
       KC_HOSTNAME_STRICT: "false"
       VIRTUAL_HOST: "id.overflow.local"
       VIRTUAL_PORT: "8080"
-    ports:
-      - "6001:8080"
     expose:
       - "8080"
       - "9000"
@@ -99,8 +97,6 @@ services:
       services__keycloak__http__0: "http://keycloak:8080"
       KEYCLOAK_MANAGEMENT: "http://keycloak:9000"
       services__keycloak__management__0: "http://keycloak:9000"
-      KEYCLOAK_KEYCLOAK: "keycloak://keycloak:8080"
-      services__keycloak__keycloak__0: "keycloak://keycloak:8080"
       ConnectionStrings__questionDb: "Host=postgres;Port=5432;Username=postgres;Password=${POSTGRES_PASSWORD};Database=questionDb"
       QUESTIONDB_HOST: "postgres"
       QUESTIONDB_PORT: "5432"
@@ -173,6 +169,8 @@ services:
       REVERSEPROXY__ROUTES__route1__CLUSTERID: "cluster_question-svc"
       REVERSEPROXY__ROUTES__route2__MATCH__PATH: "/search/{**catch-all}"
       REVERSEPROXY__ROUTES__route2__CLUSTERID: "cluster_search-svc"
+      REVERSEPROXY__ROUTES__route3__MATCH__PATH: "/test/{**catch-all}"
+      REVERSEPROXY__ROUTES__route3__CLUSTERID: "cluster_question-svc"
       REVERSEPROXY__CLUSTERS__cluster_question-svc__DESTINATIONS__destination1__ADDRESS: "https+http://question-svc"
       REVERSEPROXY__CLUSTERS__cluster_search-svc__DESTINATIONS__destination1__ADDRESS: "https+http://search-svc"
       services__question-svc__http__0: "http://question-svc:${QUESTION_SVC_PORT}"

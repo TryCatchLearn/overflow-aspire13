@@ -5,3 +5,4 @@ riderModule.iml
 /_ReSharper.Caches/
 /infra/.env
 /infra/realms/overflow-realm.json
+/infra/.env.Production

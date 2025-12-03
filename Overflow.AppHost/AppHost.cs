@@ -17,16 +17,12 @@ var postgres = builder.AddPostgres("postgres", port: 5432)
     .WithDataVolume("postgres-data")
     .WithPgAdmin();
 
-// var typesenseApiKey = builder.AddParameter("typesense-api-key", secret: true);
-
-var typesenseApiKey = builder.Environment.IsDevelopment()
-    ? builder.Configuration["Parameters:typesense-api-key"]
-      ?? throw new InvalidOperationException("Missing parameters:typesense-api-key")
-    : "${TYPESENSE_API_KEY}";
+var typesenseApiKey = builder.AddParameter("typesense-api-key", secret: true);
 
 var typesense = builder.AddContainer("typesense", "typesense/typesense", "29.0")
-    .WithArgs("--data-dir", "/data", "--api-key", typesenseApiKey, "--enable-cors")
     .WithVolume("typesense-data", "/data")
+    .WithEnvironment("TYPESENSE_DATA_DIR", "/data")
+    .WithEnvironment("TYPESENSE_ENABLE_CORS", "true")
     .WithEnvironment("TYPESENSE_API_KEY", typesenseApiKey)
     .WithHttpEndpoint(8108, 8108, name: "typesense");
 
@@ -66,7 +62,7 @@ var yarp = builder.AddYarp("gateway")
     .WithEnvironment("VIRTUAL_HOST", "api.overflow.local")
     .WithEnvironment("VIRTUAL_PORT", "8001");
 
-var webapp = builder.AddNpmApp("webapp", "../webapp", "dev")  
+var webapp = builder.AddJavaScriptApp("webapp", "../webapp")
     .WithReference(keycloak)  
     .WithHttpEndpoint(env: "PORT", port: 3000);
 
