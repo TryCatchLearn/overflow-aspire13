@@ -21,6 +21,8 @@ services:
       KC_HOSTNAME_STRICT: "false"
       VIRTUAL_HOST: "id.overflow.local"
       VIRTUAL_PORT: "8080"
+      KC_HOSTNAME: "https://id.overflow.local"
+      KC_HOSTNAME_BACKCHANNEL_DYNAMIC: "true"
     expose:
       - "8080"
       - "9000"
@@ -31,7 +33,7 @@ services:
         read_only: false
       - type: "bind"
         target: "/opt/keycloak/data/import"
-        source: "/Users/neil/Projects/AspireCourse/demo-2025/Overflow/infra/realms"
+        source: "/Users/neil/Projects/AspireCourse/demo-js-pub/Overflow/infra/realms"
         read_only: true
     networks:
       - "aspire"
@@ -53,13 +55,9 @@ services:
       - "aspire"
   typesense:
     image: "typesense/typesense:29.0"
-    command:
-      - "--data-dir"
-      - "/data"
-      - "--api-key"
-      - "${TYPESENSE_API_KEY}"
-      - "--enable-cors"
     environment:
+      TYPESENSE_DATA_DIR: "/data"
+      TYPESENSE_ENABLE_CORS: "true"
       TYPESENSE_API_KEY: "${TYPESENSE_API_KEY}"
     expose:
       - "8108"
@@ -190,14 +188,37 @@ services:
       - "5000"
     networks:
       - "aspire"
+  webapp:
+    image: "${WEBAPP_IMAGE}"
+    environment:
+      NODE_ENV: "production"
+      KEYCLOAK_HTTP: "http://keycloak:8080"
+      services__keycloak__http__0: "http://keycloak:8080"
+      KEYCLOAK_MANAGEMENT: "http://keycloak:9000"
+      services__keycloak__management__0: "http://keycloak:9000"
+      PORT: "4000"
+      VIRTUAL_HOST: "app.overflow.local"
+      VIRTUAL_PORT: "4000"
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://production-dashboard:18889"
+      OTEL_EXPORTER_OTLP_PROTOCOL: "grpc"
+      OTEL_SERVICE_NAME: "webapp"
+    expose:
+      - "4000"
+    networks:
+      - "aspire"
   nginx-proxy:
     image: "nginxproxy/nginx-proxy:1.9"
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - type: "bind"
         target: "/tmp/docker.sock"
         source: "/var/run/docker.sock"
+        read_only: true
+      - type: "bind"
+        target: "/etc/nginx/certs"
+        source: "/Users/neil/Projects/AspireCourse/demo-js-pub/Overflow/infra/devcerts"
         read_only: true
     networks:
       - "aspire"

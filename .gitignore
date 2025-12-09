@@ -6,3 +6,4 @@ riderModule.iml
 /infra/.env
 /infra/realms/overflow-realm.json
 /infra/.env.Production
+/infra/devcerts/*

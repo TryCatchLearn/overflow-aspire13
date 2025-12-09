@@ -63,14 +63,21 @@ var yarp = builder.AddYarp("gateway")
     .WithEnvironment("VIRTUAL_PORT", "8001");
 
 var webapp = builder.AddJavaScriptApp("webapp", "../webapp")
-    .WithReference(keycloak)  
-    .WithHttpEndpoint(env: "PORT", port: 3000);
+    .WithReference(keycloak)
+    .WithHttpEndpoint(env: "PORT", port: 3000, targetPort: 4000)
+    .WithEnvironment("VIRTUAL_HOST", "app.overflow.local")
+    .WithEnvironment("VIRTUAL_PORT", "4000")
+    .PublishAsDockerFile();
 
 if (!builder.Environment.IsDevelopment())
 {
-    builder.AddContainer("nginx-proxy", "nginxproxy/nginx-proxy", "1.9")  
-        .WithEndpoint(80, 80, name: "nginx", isExternal: true)  
-        .WithBindMount("/var/run/docker.sock", "/tmp/docker.sock", true);   
-}
+    builder.AddContainer("nginx-proxy", "nginxproxy/nginx-proxy", "1.9")
+        .WithEndpoint(80, 80, name: "nginx", isExternal: true)
+        .WithEndpoint(443, 443, name: "nginx-ssl", isExternal: true)
+        .WithBindMount("/var/run/docker.sock", "/tmp/docker.sock", true)
+        .WithBindMount("../infra/devcerts", "/etc/nginx/certs", true);
 
+    keycloak.WithEnvironment("KC_HOSTNAME", "https://id.overflow.local")
+        .WithEnvironment("KC_HOSTNAME_BACKCHANNEL_DYNAMIC", "true");
+}
 builder.Build().Run();

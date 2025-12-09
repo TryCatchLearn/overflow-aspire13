@@ -9,11 +9,13 @@ import {Button} from "@heroui/button";
 import {Controller, useForm} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
 import {QuestionSchema, questionSchema} from "@/lib/schemas/questionSchema";
-import RichTextEditor from "@/components/rte/RichTextEditor";
 import {postQuestion, updateQuestion} from "@/lib/actions/question-actions";
 import {handleError} from "@/lib/util";
 import {useRouter} from "next/navigation";
 import {Question} from "@/lib/types";
+import dynamic from "next/dynamic";
+
+const RichTextEditor = dynamic(() => import('@/components/rte/RichTextEditor'), {ssr: false});
 
 type Props = {
     questionToUpdate?: Question
