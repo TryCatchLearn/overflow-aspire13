@@ -1,9 +1,4 @@
-import { loadEnvConfig } from '@next/env'
-
-const projectDir = process.cwd()
-loadEnvConfig(projectDir);
-
-function getEnv(name: string): string {
+function getEnv(name: keyof NodeJS.ProcessEnv): string {
     const value = process.env[name];
     if (!value) throw new Error(`Missing environment variable: ${name}`);
     return value;

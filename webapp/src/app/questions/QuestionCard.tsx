@@ -56,9 +56,9 @@ export default function QuestionCard({question}: Props) {
 
                         <div className='text-sm flex items-center gap-2'>
                             <Avatar className='h-6 w-6' color='secondary'
-                                    name={question.askerDisplayName.charAt(0)}/>
+                                    name={question.author?.displayName.charAt(0)}/>
                             <Link href={`/profiles/${question.askerId}`} className='text-secondary'>
-                                {question.askerDisplayName}
+                                {question.author?.displayName}
                             </Link>
                             <span>asked {timeAgo(question.createdAt)}</span>
                         </div>

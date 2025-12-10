@@ -1,12 +1,13 @@
 import {notFound} from "next/navigation";
 import {auth} from "@/auth";
 import {apiConfig} from "@/lib/config";
+import {FetchResponse} from "@/lib/types";
 
 export async function fetchClient<T>(
     url: string,
     method: 'GET' | 'POST' | 'PUT' | 'DELETE',
     options: Omit<RequestInit, 'body'> & { body?: unknown } = {}
-): Promise<{ data: T | null; error?: {message: string, status: number} }> {
+): Promise<FetchResponse<T>> {
     const { body, ...rest } = options;
     const apiUrl = apiConfig.baseUrl;
 

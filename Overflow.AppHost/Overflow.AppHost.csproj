@@ -18,6 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\ProfileService\ProfileService.csproj" />
       <ProjectReference Include="..\QuestionService\QuestionService.csproj" />
       <ProjectReference Include="..\SearchService\SearchService.csproj" />
     </ItemGroup>

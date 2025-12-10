@@ -6,9 +6,17 @@ import {JWT} from 'next-auth/jwt';
 declare module "next-auth" {
     interface Session {
         user: {
-            username: string
-        } & DefaultSession["user"]
+            id: string;
+            displayName: string
+            reputation: number
+        } & DefaultUser
         accessToken: string
+    }
+
+    interface User {
+        username: string;
+        displayName: string;
+        reputation: number;
     }
 }
 
@@ -18,5 +26,10 @@ declare module 'next-auth/jwt' {
         refreshToken: string
         accessTokenExpires: number // Unix timestamp in seconds
         error?: string
+        user: {
+            id: string;
+            displayName: string;
+            reputation: number;
+        }
     }
 }
