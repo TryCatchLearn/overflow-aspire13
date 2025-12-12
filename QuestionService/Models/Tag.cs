@@ -15,4 +15,6 @@ public class Tag
     
     [MaxLength(1000)]
     public required string Description { get; set; }
+
+    public int UsageCount { get; set; }
 }

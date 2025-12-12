@@ -3,11 +3,20 @@ import VotingButtons from "@/app/questions/[id]/VotingButtons";
 import AnswerFooter from "@/app/questions/[id]/AnswerFooter";
 import {getCurrentUser} from "@/lib/actions/auth-actions";
 
-export default async function AnswerContent({answer}: {answer: Answer}) {
+type Props = {
+    answer: Answer;
+    askerId: string;
+}
+
+export default async function AnswerContent({answer, askerId}: Props) {
     const currentUser = await getCurrentUser();
     return (
         <div className='flex border-b pb-3 px-6'>
-            <VotingButtons accepted={answer.accepted} />
+            <VotingButtons
+                currentUserId={currentUser.id}
+                target={answer}
+                askerId={askerId}
+            />
             <div className='flex flex-col w-full'>
                 <div
                     className='flex-1 mt-4 ml-6 prose max-w-none dark:prose-invert'

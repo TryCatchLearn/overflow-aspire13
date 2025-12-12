@@ -20,7 +20,7 @@ export default function TagCard({ tag }: Props) {
                 <p className='line-clamp-3'>{tag.description}</p>
             </CardBody>
             <CardFooter className='text-foreground/50'>
-                42 questions
+                {tag.usageCount} {tag.usageCount === 1 ? 'question' : 'questions'}
             </CardFooter>
         </Card>
     )

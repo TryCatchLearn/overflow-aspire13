@@ -1,0 +1,6 @@
+@VoteService_HostAddress = http://localhost:5116
+
+GET {{VoteService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

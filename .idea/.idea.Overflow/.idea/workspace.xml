@@ -5,40 +5,65 @@
     <projectFile profileName="http">ProfileService/ProfileService.csproj</projectFile>
     <projectFile profileName="http">QuestionService/QuestionService.csproj</projectFile>
     <projectFile profileName="http">SearchService/SearchService.csproj</projectFile>
+    <projectFile profileName="http">StatsService/StatsService.csproj</projectFile>
+    <projectFile profileName="http">VoteService/VoteService.csproj</projectFile>
+    <projectFile profileName="https">VoteService/VoteService.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3aae074-179f-49a1-aa59-213c9fd29622" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ProfileService/DTOs/ProfileSummaryDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProfileService/Data/ProfileDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProfileService/Middleware/UserProfileCreationMiddleware.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProfileService/Models/UserProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/auth-gate/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/middleware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contracts/ReputationReason.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contracts/UserReputationChanged.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contracts/VoteCasted.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProfileService/DTOs/EditProfileDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProfileService/MessageHandlers/UserReputationChangedHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestionService/MessageHandlers/VoteCastedHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reputation/ReputationHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatsService/MessageHandlers/QuestionCreatedHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatsService/MessageHandlers/UserReputationChangedHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatsService/Models/TagDailyUsage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatsService/Models/UserDailyReputation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatsService/Projections/TopUsersProjection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatsService/Projections/TrendingTagsProjection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoteService/DTOs/CastVoteDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoteService/DTOs/UserVotesResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoteService/Data/VoteDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoteService/Models/Vote.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/profiles/ProfilesList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/profiles/[id]/EditProfileForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/profiles/[id]/ProfiileDetailed.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/profiles/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/profiles/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/TopUsers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/TrendingTags.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/lib/actions/profile-actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/lib/schemas/editProfileSchema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/AuthExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/AuthExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Common/WolverineExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/WolverineExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Overflow.AppHost/Overflow.AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/Overflow.AppHost.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Overflow.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileService/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/Controllers/TagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Controllers/TagsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestionService/Data/Migrations/QuestionDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Data/Migrations/QuestionDbContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestionService/Models/Answer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Models/Answer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Models/Question.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Models/Question.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SearchService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/QuestionCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionFooter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/Models/Tag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Models/Tag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/VotingButtons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/VotingButtons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/tags/TagCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/tags/TagCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/tags/TagHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/tags/TagHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/tags/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/tags/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/SideMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/SideMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/components/nav/UserMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/nav/UserMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/lib/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/lib/fetchClient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/fetchClient.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/tag-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/tag-actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/lib/types/next-auth.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/types/next-auth.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,10 +89,27 @@
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Contracts/ReputationReason.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Contracts/UserReputationChanged.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Contracts/VoteCasted.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/neil/Projects/AspireCourse/demo-js-pub/Overflow/Overflow.AppHost/AppHost.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProfileService/DTOs/EditProfileDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProfileService/DTOs/ProfileSummaryDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProfileService/Data/ProfileDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProfileService/MessageHandlers/UserReputationChangedHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProfileService/Middleware/UserProfileCreationMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QuestionService/MessageHandlers/VoteCastedHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Reputation/ReputationHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StatsService/MessageHandlers/QuestionCreatedHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StatsService/MessageHandlers/UserReputationChangedHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StatsService/Models/TagDailyUsage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StatsService/Models/UserDailyReputation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StatsService/Projections/TopUsersProjection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StatsService/Projections/TrendingTagsProjection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VoteService/DTOs/CastVoteDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VoteService/DTOs/UserVotesResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VoteService/Data/VoteDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VoteService/Models/Vote.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
   <component name="KubernetesApiProvider"><![CDATA[{
@@ -92,6 +134,7 @@
     "Aspire Host.Overflow.AppHost: http.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "main",
@@ -176,6 +219,54 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="StatsService: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/StatsService/StatsService.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net10.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="VoteService: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/VoteService/VoteService.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net10.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="VoteService: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/VoteService/VoteService.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net10.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -184,8 +275,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765351919101</updated>
-      <workItem from="1765351921160" duration="5731000" />
+      <workItem from="1765351921160" duration="21774000" />
     </task>
+    <task id="LOCAL-00001" summary="End of section 12">
+      <option name="closed" value="true" />
+      <created>1765359013366</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765359013366</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +295,8 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="End of section 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of section 12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
