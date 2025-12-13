@@ -11,58 +11,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3aae074-179f-49a1-aa59-213c9fd29622" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Contracts/ReputationReason.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contracts/UserReputationChanged.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contracts/VoteCasted.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProfileService/DTOs/EditProfileDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProfileService/MessageHandlers/UserReputationChangedHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestionService/MessageHandlers/VoteCastedHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reputation/ReputationHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatsService/MessageHandlers/QuestionCreatedHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatsService/MessageHandlers/UserReputationChangedHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatsService/Models/TagDailyUsage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatsService/Models/UserDailyReputation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatsService/Projections/TopUsersProjection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatsService/Projections/TrendingTagsProjection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoteService/DTOs/CastVoteDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoteService/DTOs/UserVotesResult.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoteService/Data/VoteDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoteService/Models/Vote.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/profiles/ProfilesList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/profiles/[id]/EditProfileForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/profiles/[id]/ProfiileDetailed.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/profiles/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/profiles/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/components/TopUsers.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/components/TrendingTags.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/actions/profile-actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/schemas/editProfileSchema.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/MigrationRunner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/Pagination.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestionService/RequestHelpers/QuestionsQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/loading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/AppPagination.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/WolverineExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/WolverineExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Overflow.AppHost/Overflow.AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/Overflow.AppHost.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Overflow.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Common.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileService/ProfileService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileService/ProfileService.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProfileService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileService/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Controllers/TagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Controllers/TagsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Data/Migrations/QuestionDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Data/Migrations/QuestionDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Models/Answer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Models/Answer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Models/Tag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Models/Tag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/VotingButtons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/VotingButtons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoteService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VoteService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoteService/VoteService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/VoteService/VoteService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/QuestionsHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionsHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswersHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswersHeader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/tags/TagCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/tags/TagCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/tags/TagHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/tags/TagHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/tags/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/tags/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/components/SideMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/SideMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/components/nav/UserMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/nav/UserMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/tag-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/tag-actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +58,8 @@
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Common/MigrationRunner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Common/Pagination.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Contracts/ReputationReason.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Contracts/UserReputationChanged.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Contracts/VoteCasted.cs" root0="FORCE_HIGHLIGHTING" />
@@ -99,6 +70,8 @@
     <setting file="file://$PROJECT_DIR$/ProfileService/MessageHandlers/UserReputationChangedHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProfileService/Middleware/UserProfileCreationMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestionService/MessageHandlers/VoteCastedHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/neil/Projects/AspireCourse/demo-js-pub/Overflow/QuestionService/Models/Answer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QuestionService/RequestHelpers/QuestionsQuery.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Reputation/ReputationHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StatsService/MessageHandlers/QuestionCreatedHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StatsService/MessageHandlers/UserReputationChangedHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -275,7 +248,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765351919101</updated>
-      <workItem from="1765351921160" duration="21774000" />
+      <workItem from="1765351921160" duration="34165000" />
     </task>
     <task id="LOCAL-00001" summary="End of section 12">
       <option name="closed" value="true" />
@@ -285,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765359013366</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="End of section 13">
+      <option name="closed" value="true" />
+      <created>1765533997878</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765533997878</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +277,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="End of section 12" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of section 12" />
+    <MESSAGE value="End of section 13" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of section 13" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
