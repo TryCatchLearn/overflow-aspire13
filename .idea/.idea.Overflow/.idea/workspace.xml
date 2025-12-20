@@ -11,28 +11,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3aae074-179f-49a1-aa59-213c9fd29622" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Common/MigrationRunner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/Pagination.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestionService/RequestHelpers/QuestionsQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/loading.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/components/AppPagination.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatsService/Extensions/PostgresDbExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Common/Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Common.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileService/ProfileService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileService/ProfileService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Overflow.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestionService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoteService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VoteService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoteService/VoteService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/VoteService/VoteService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/QuestionsHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionsHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswersHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswersHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatsService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StatsService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/TopUsers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/TopUsers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/TrendingTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/TrendingTags.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/tag-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/tag-actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/lib/fetchClient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/fetchClient.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/proxy.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,34 +36,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "TryCatchLearn"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TryCatchLearn&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/TryCatchLearn/overflow-aspire13.git",
-    "accountId": "425d3e79-970a-4167-8fb9-b3a2cbaf0634"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/TryCatchLearn/overflow-aspire13.git&quot;,
+    &quot;accountId&quot;: &quot;425d3e79-970a-4167-8fb9-b3a2cbaf0634&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.aspire/settings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Common/MigrationRunner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Common/Pagination.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Contracts/ReputationReason.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Contracts/UserReputationChanged.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Contracts/VoteCasted.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/neil/Projects/AspireCourse/demo-js-pub/Overflow/Overflow.AppHost/AppHost.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProfileService/DTOs/EditProfileDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProfileService/DTOs/ProfileSummaryDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProfileService/Data/ProfileDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProfileService/MessageHandlers/UserReputationChangedHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProfileService/Middleware/UserProfileCreationMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestionService/MessageHandlers/VoteCastedHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/neil/Projects/AspireCourse/demo-js-pub/Overflow/QuestionService/Models/Answer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestionService/RequestHelpers/QuestionsQuery.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Reputation/ReputationHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StatsService/Extensions/PostgresDbExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StatsService/MessageHandlers/QuestionCreatedHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StatsService/MessageHandlers/UserReputationChangedHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StatsService/Models/TagDailyUsage.cs" root0="FORCE_HIGHLIGHTING" />
@@ -84,15 +75,15 @@
     <setting file="file://$PROJECT_DIR$/VoteService/Data/VoteDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/VoteService/Models/Vote.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="36e0qCX2PKKeTm5ox7rPMQ2M111" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -102,21 +93,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Aspire Host.Overflow.AppHost: http.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "SolutionBuilderGeneralOptionsPage",
-    "ts.external.directory.path": "/Users/neil/Projects/AspireCourse/demo-js-pub/Overflow/webapp/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Aspire Host.Overflow.AppHost: http.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;SolutionBuilderGeneralOptionsPage&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/neil/Projects/AspireCourse/demo-js-pub/Overflow/webapp/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Aspire Host.Overflow.AppHost: http">
     <configuration name="Overflow.AppHost: http" type="AspireHostConfiguration" factoryName="Aspire Host" activateToolWindowBeforeRun="false">
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Overflow.AppHost/Overflow.AppHost.csproj" />
@@ -128,13 +119,13 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Overflow.AppHost" />
       <option name="TRACK_ENVS" value="1" />
       <envs>
-        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
         <env name="DOTNET_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
         <env name="ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL" value="http://localhost:19215" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5001" />
         <env name="ASPIRE_DASHBOARD_MCP_ENDPOINT_URL" value="http://localhost:18215" />
         <env name="ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL" value="http://localhost:20011" />
         <env name="DOTNET_LAUNCH_PROFILE" value="http" />
-        <env name="ASPNETCORE_URLS" value="http://localhost:5001" />
       </envs>
       <option name="USE_PODMAN_RUNTIME" value="0" />
       <option name="TRACK_URL" value="1" />

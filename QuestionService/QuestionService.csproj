@@ -14,8 +14,8 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="WolverineFx.EntityFrameworkCore" Version="5.7.1" />
-        <PackageReference Include="WolverineFx.Postgresql" Version="5.7.1" />
+        <PackageReference Include="WolverineFx.EntityFrameworkCore" Version="5.9.1" />
+        <PackageReference Include="WolverineFx.Postgresql" Version="5.9.1" />
     </ItemGroup>
 
     <ItemGroup>

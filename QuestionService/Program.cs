@@ -1,18 +1,14 @@
-using System.Net.Sockets;
 using Common;
 using Contracts;
 using Microsoft.EntityFrameworkCore;
-using OpenTelemetry.Resources;
-using OpenTelemetry.Trace;
-using Polly;
 using QuestionService.Data;
 using QuestionService.Services;
-using RabbitMQ.Client;
-using RabbitMQ.Client.Exceptions;
-using Wolverine;
 using Wolverine.EntityFrameworkCore;
 using Wolverine.Postgresql;
 using Wolverine.RabbitMQ;
+
+Console.WriteLine("Welcome to Question Service - outputting assembly location");
+Console.WriteLine(typeof(Microsoft.EntityFrameworkCore.DbContext).Assembly.Location);
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -57,6 +57,7 @@ public class QuestionsController(QuestionDbContext db, IMessageBus bus, TagServi
         }
         catch (Exception e)
         {
+            Console.WriteLine(e);
             await tx.RollbackAsync();
             throw;
         }

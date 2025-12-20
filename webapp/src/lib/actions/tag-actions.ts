@@ -1,7 +1,7 @@
 'use server'
 
 import {fetchClient} from "@/lib/fetchClient";
-import {Tag} from "@/lib/types";
+import {Tag, TrendingTag} from "@/lib/types";
 
 export async function getTags(sort?: string) {
     let url = '/tags';
